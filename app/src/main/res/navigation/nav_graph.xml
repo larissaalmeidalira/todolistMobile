@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/cadastroTarefaFragment">
+
+    <fragment
+        android:id="@+id/principalFragment"
+        android:name="com.example.todolistapp.fragment.PrincipalFragment"
+        android:label="fragment_principal"
+        tools:layout="@layout/fragment_principal" >
+        <action
+            android:id="@+id/action_principalFragment_to_cadastroTarefaFragment"
+            app:destination="@id/cadastroTarefaFragment" />
+        <action
+            android:id="@+id/action_principalFragment_to_tarefasCadastradasFragment2"
+            app:destination="@id/tarefasCadastradasFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cadastroTarefaFragment"
+        android:name="com.example.todolistapp.fragment.CadastroTarefaFragment"
+        android:label="fragment_cadastro_tarefa"
+        tools:layout="@layout/fragment_cadastro_tarefa" />
+    <fragment
+        android:id="@+id/tarefasCadastradasFragment"
+        android:name="com.example.todolistapp.fragment.TarefasCadastradasFragment"
+        android:label="fragment_tarefas_cadastradas"
+        tools:layout="@layout/fragment_tarefas_cadastradas" >
+        <action
+            android:id="@+id/action_tarefasCadastradasFragment_to_editarTarefaFragment"
+            app:destination="@id/editarTarefaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editarTarefaFragment"
+        android:name="com.example.todolistapp.fragment.EditarTarefaFragment"
+        android:label="fragment_editar_tarefa"
+        tools:layout="@layout/fragment_editar_tarefa" />
+</navigation>

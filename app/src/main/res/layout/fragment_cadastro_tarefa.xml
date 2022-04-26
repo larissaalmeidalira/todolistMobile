@@ -1,0 +1,84 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.CadastroTarefaFragment">
+
+
+    <TextView
+        android:id="@+id/tv_titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="@string/titulo"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/edit_titulo"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_titulo"
+        android:background="@drawable/borda"/>
+
+    <TextView
+        android:id="@+id/tv_descricao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        app:layout_constraintTop_toBottomOf="@id/edit_titulo"
+        tools:layout_editor_absoluteX="16dp"
+        android:text="@string/descricao"/>
+
+    <EditText
+        android:id="@+id/edit_descricao"
+        android:layout_width="match_parent"
+        android:lines="4"
+        android:inputType="textCapSentences|textMultiLine"
+        android:gravity="top"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"
+        android:layout_height="120dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_descricao"
+        android:background="@drawable/borda"/>
+
+    <TextView
+        android:id="@+id/tv_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        app:layout_constraintTop_toBottomOf="@id/edit_descricao"
+        android:text="@string/data"/>
+
+    <Button
+        android:id="@+id/button_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="@string/bt_data"
+        app:layout_constraintTop_toBottomOf="@id/tv_data"/>
+
+    <Button
+        android:id="@+id/button_salvar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        app:layout_constraintTop_toBottomOf="@id/button_data"
+        android:text="@string/salvar" />
+</androidx.constraintlayout.widget.ConstraintLayout>

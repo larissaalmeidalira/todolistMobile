@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">To Do List App</string>
+   <string name="titulo">Título</string>
+    <string name="descricao">Descrição</string>
+    <string name="data">Data</string>
+    <string name="salvar">Salvar</string>
+    <string name="bt_data">Data</string>
+    <string name="obrigatorio">Campo obrigatório</string>
+</resources>
