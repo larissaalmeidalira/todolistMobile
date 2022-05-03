@@ -62,4 +62,8 @@ public class Tarefa {
     public void setDataFinalizada(Long dataFinalizada) {
         this.dataFinalizada = dataFinalizada;
     }
+
+    public boolean isConcluida(){
+        return dataFinalizada != 0;
+    }
 }

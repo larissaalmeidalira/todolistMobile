@@ -112,6 +112,9 @@ public class CadastroTarefaFragment extends Fragment {
         protected void onPostExecute(String resultado) {
             if (resultado.equals("ok")){
                 Log.w("Passou!!", "!!!");
+
+                getActivity().onBackPressed();
+
             }else{
                 Log.w("RESULTADO", resultado);
                 Toast.makeText(getContext(), "DEU RUIM"+resultado, Toast.LENGTH_SHORT).show();

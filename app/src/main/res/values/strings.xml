@@ -6,4 +6,7 @@
     <string name="salvar">Salvar</string>
     <string name="bt_data">Data</string>
     <string name="obrigatorio">Campo obrigatório</string>
+    <string name="concluida">Tarefa Concluída</string>
+    <string name="aberta">Tarefa Aberta</string>
+
 </resources>

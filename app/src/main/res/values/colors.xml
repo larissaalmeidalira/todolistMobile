@@ -10,5 +10,10 @@
     <color name="invisivel">#00FFFFFF</color>
     <color name="azul">#219ebc</color>
     <color name="azul_escuro">#14213d</color>
+    <color name="verde_500">#00cc00</color>
+    <color name="vermelho">#ff3333</color>
+    <color name="amarelo">#ffffb3</color>
+    <color name="azul_claro">#e6f2ff</color>
+
 
 </resources>
